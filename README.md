@@ -13,7 +13,7 @@ Para instalar o nodejs, acesse o site https://nodejs.org/en/ e opte pela versão
 
 No terminal, navegue até a pasta na qual se encontram os arquivos desse projeto, use o comando 'npm install', para instalar as dependências do projeto.
 Após isso, abra um novo terminal e utilize o comando 'mongod'. Assim o servidor do banco de dados será aberto. Na pasta do projeto, após a instalação das dependências, use o comando node data/books-data.js. Esse comando fará com que os documentos iniciais sejam inseridos no banco de dados. Finalmente, use o 
-npm start para iniciar o projeto.
+npm start para iniciar o projeto. Abra o seu brower e na barra de endereços digite "http://localhost:3000/"
 
 
 

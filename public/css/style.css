@@ -1,0 +1,308 @@
+
+/* reseting */
+body{
+    padding:0;
+    box-sizing: border-box;
+    margin:0;
+    background-color: beige;
+    font-size:12pt;
+    
+}
+/*General */
+button{
+
+    padding:0;
+    width:fit-content;
+
+
+}
+.item-image{
+    margin:0 auto;
+}
+
+
+
+.container{
+    width:fit-content;
+     padding:0;
+    box-sizing: border-box;
+    margin:0 auto;
+    background-color: aliceblue;
+  
+}
+
+/*navbar */
+.navbar-link{
+    text-decoration: none;
+    color:white;
+}
+
+.navbar-link :hover{
+    text-decoration: none;
+
+}
+
+.item-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+} 
+
+
+
+.navbar{
+    background-color:rgb(1, 15, 59);
+    width: 100vw;
+}
+
+
+
+ .navbar-links{
+    
+    width:100%;
+      display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+   
+
+}
+
+.navbar-link:hover{
+    background-color: rgba(12, 49, 168, 0.5);
+   padding: 0.5rem 1rem;
+
+}
+
+
+
+.cart-link:hover{
+    padding:0;
+}
+
+.cart-link{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Shop-item */
+.shop-item{
+    width:fit-content;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+/* Cart */
+.cart-header{
+    background-color: #eee;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom:1px  black solid; */
+
+} 
+.cart-header-content{
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.cart-header-label{
+    border-left: 1px solid rgb(138, 138, 138);
+    border-right: 1px solid rgb(138, 138, 138);
+    height: 100%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+
+}
+.cart-book-order-label{
+    padding: 0  3em 0 3em;
+    margin-left: 10px;
+    border-left:none;
+}
+.cart-book-cover-label{
+    padding: 0  1em 0 1em;
+    margin-right:15px; 
+    border:none;
+
+}
+ 
+.cart-book-name-label{
+    padding: 0  10em 0 10em;
+}
+.cart-book-quantity-label{
+    padding: 0  1em 0 1em;
+    margin-right: 10px;
+    border:none;
+
+}
+.cart-book-price-label{
+    padding: 0  4em 0 4em;
+    margin-right:25px;
+    border-right:none;
+    
+
+}
+
+.cart-row-details{
+    
+    display: flex;
+    justify-content: space-between;
+    width:95vw;
+    align-items: center;
+
+}
+
+.remove-button{
+   position:absolute;
+   left:1em;
+
+}
+
+.remove-button:hover{
+    color:red;
+    cursor:pointer;
+}
+
+/* .order-section{
+    background-color: #333;
+    width: 2%;
+} */
+
+.cart-row{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom:1px  black solid;
+    align-items: center;
+}
+.cart-rows{
+    background-color: white;
+    /* border-top:1px  black solid; */
+    border-bottom:1px solid rgb(138, 138, 138);
+
+}
+
+.cart-item-order-number{
+    padding:0 0 0;
+}
+
+
+.cart-quantity-input{
+   height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(138, 138, 138);
+    background-color: #eee;
+    
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+
+/*cart footer*/
+
+.cart-footer{
+    background-color: #eee;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-footer-content{
+    width:60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.keep-buying-button{
+    position:absolute;
+    left: 0;
+}
+.cart-subtotal-price{
+    height: 2em;
+    width:10em;
+}
+
+
+.finish-button{
+    margin-right: 0.2em;
+ 
+}
+
+
+.comfirmation-content{
+    width:100vw;
+   height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    justify-content: center;
+    font-size: larger;
+   
+   
+}
+
+.ticket-area{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+
+   
+    
+}
+
+
+.fake-input{
+    background: none;
+    border: none;
+    overflow: visible;
+     width:fit-content;
+     float: right;
+}
+textarea{border:none;overflow:visible; resize: none;}
+
+.ticket-area input{
+    margin: 0 auto;
+    margin-bottom: 1em;
+     text-align: center;
+    font-size: 1.2em;
+    width:8em;
+
+}
+.subtotal-form-content{
+    display: flex;
+    flex-direction: row;
+    width:60vw;
+    justify-content: space-between;
+    
+    align-items: center;
+
+}
+/*Form */
+form{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.field{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container{
+
+    background-color: beige;
+}

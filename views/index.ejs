@@ -1,0 +1,27 @@
+<%for( let bookRow of books) {%>
+<div class="row row-1">
+    <%for( let book of bookRow) {%>
+
+    <div class="shop-item col col-4 card">
+        <div class="card-body">
+            <div class="item-details">
+                <form action="/cart" method="POST">
+                <textarea readonly rows="4" cols="30" class="shop-item-title card-title fake-input" value="<%=book.title%>" readonly name="title"><%=book.title%></textarea>
+                <i class="fas fa-book fa-4x item-image "></i>
+                <textarea readonly name="author" id="author" rows="2" cols="30" class="item-author fake-input" ><%=book.author%></textarea>
+                <div class="class="form-group form-row align-items center style="text-align: center;">
+                <label>Quantidade em Estoque:</label>
+                <input style="display: inline"class="shop-item-quantity fake-input" readonly value="<%=book.stock%>" name="stock">
+                </div>
+                    <div class="form-group form-row align-items center">
+                <label>Preço:</label>
+                <input style="display: inline" name="price" rows="1" cols="7" class="shop-item-price fake-input" value="R$<%=book.price%>">
+            </div>
+                <button type="submit" class="btn btn-primary shop-item-button" href="cart">ADICIONAR AO CARRINHO</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <%}%>
+</div>
+<%}%>

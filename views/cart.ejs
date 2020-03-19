@@ -1,0 +1,58 @@
+<body>
+
+    <div class="cart-header">
+        <div class="cart-header-content">
+            <label class="cart-header-label cart-book-order-label">Ordem</label>
+            <label class="cart-header-label cart-book-cover-label">capa</label>
+            <label class="cart-header-label cart-book-name-label">Nome do Livro</label>
+            <label class="cart-header-label cart-book-quantity-label">Quantidade</label>
+            <label class="cart-header-label cart-book-price-label">Preço</label>
+        </div>
+    </div>
+
+
+    <div class=cart-rows>
+        <%for( let book of locals.cartRows){%>
+        <form method="POST" action="/<%=book.id%>?_method=DELETE">
+       <input type="hidden" name="bookID" value="<%=this._id%>">
+            <div class="cart-row">
+                <div class="cart-row-details">
+                    <button type="submit" class="remove-button">X</button>
+                   <span class="cart-item-order-number ">1</span>
+                        <i class="fas fa-book fa-3x cart-item-image"></i>
+                    <span class=" cart-item-title "><%=book.title%></span>
+
+                    <input type="number" class="cart-quantity-input" value='1'>
+                    <span class="cart-item-price"><%=book.price%></span>
+                </div>
+            </div>
+        </form>
+
+        <%}%>
+
+
+    </div>
+    <div class="cart-footer">
+        <div class="cart-footer-content">
+            <a href="/" class="btn btn-success keep-buying-button">Continuar Comprando</a>
+
+            <div class="subtotal-form-content">
+                <div class="ticket-area">
+                    <a class="btn btn-secondary ticket-button">Adicionar Cupom</a>
+                    <input type="text" class="ticket-input">
+
+                </div>
+                <form action='/comfirmation' method="POST" class="subtotal-form">
+
+                    <label class="subtotal-cart-label">SubTotal:</label><input class="cart-subtotal-price fake-input"
+                        name="subtotal" type="text" readonly> </input>
+
+                    <button class=" btn btn-primary finish-button " type="submit" style="color: aliceblue;">Finalizar
+                        Compras</button>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>

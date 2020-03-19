@@ -19,10 +19,12 @@ npm start para iniciar o projeto.
 
 ## Diferenciais
 
-- Utilização do banco de dados mongodb
+- Utilização do banco de dados mongodb.
+
 -Implementação de desconto após a utilização do cupom 'TrabalheNaTegra' Com descontos de 20%  nos livros do autor “Robert C. Martin e
 de  10%  nos livros do autor “Martin Fowler”.
-- Alguns tratamentos de erros
+
+- Alguns tratamentos de erros.
 
 
 

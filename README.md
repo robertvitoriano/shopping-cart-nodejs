@@ -1,6 +1,5 @@
-# desafio-tegra-nodejs
+# shoppiing-cart-nodejs
 
-Desafio desenvolvido  para o programa de estágio  Tegra 2020
 
 ## Instruções para execução da aplicação
 

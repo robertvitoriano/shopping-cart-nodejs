@@ -1,18 +1,14 @@
-//Making the code being able to run, even if some content of the page haven't been loaded properly
 if (document.readyState == 'loading') {
-
     document.addEventListener('DOMContentLoaded', main)
 }
 else {
     main();
 }
 
-    //  flags
-    let ticketUsed = false;
-
+//  flags
+let ticketUsed = false;
 
 function main() {
-    
     updateCartTotal();
     // removeCartItem();
     changeInput();
@@ -23,16 +19,7 @@ function main() {
     // showError();
     // removeById();
     // console.log(JSON.parse(sessionStorage.getItem('Data')))
-
-
-
 }
-
-
-
-
-
-
 function useTicket() {
     let ticketButton = document.querySelector('.ticket-button')
     if (ticketButton != null)
@@ -40,13 +27,6 @@ function useTicket() {
 
 
 }
-
-
-
-
-
-
-
 
 //Comfirmation
 
@@ -60,10 +40,7 @@ function verifyTicket() {
         if (ticket) {
             if (ticket.value === 'TrabalheNaTegra') {
                 // fun2()
-            //   console.log(sessionStorage.getItem('Data'))
-
-
-
+                //   console.log(sessionStorage.getItem('Data'))
 
                 let martin = ["Padrões de Arquitetura de Aplicações Corporativas",
                     "Refactoring: Improving the Design of Existing Code",];
@@ -81,18 +58,14 @@ function verifyTicket() {
                 // Verificando autores e aplicando descontos
                 for (let i = 0; i < itemPriceElement.length; i++) {
 
-
                     for (let j = 0; j < martin.length; j++) {
                         if (title[i].innerText === martin[j]) {
                             console.log(title[i].innerText)
 
-
                             let newPrice = currentPrice[i] - currentPrice[i] * 0.10;
                             itemPriceElement[i].innerText = 'R$' + newPrice.toFixed(2);
                             itemPriceElement[i].innerText.replace('.', ',')
-
                         }
-
                     }
 
                     for (let j = 0; j < robert.length; j++) {
@@ -100,16 +73,9 @@ function verifyTicket() {
                             let newPrice = currentPrice[i] - currentPrice[i] * 0.20;
                             itemPriceElement[i].innerText = 'R$' + newPrice.toFixed(2);
                             itemPriceElement[i].innerText.replace('.', ',')
-
-
                         }
-
                     }
-
-
                 }
-
-
             }
         }
         updateCartTotal();
@@ -136,8 +102,6 @@ function verifyTicket() {
 //     if( cartItems !==null){
 //     cartItems.append(cartRow)
 //     }
-   
-
 
 
 // }
@@ -172,7 +136,6 @@ function removeCartItem() {
 function removeCartRow(event) {
     event.target.parentElement.remove();
     updateCartTotal()
-
 }
 
 function quantityChanged(event) {
@@ -201,6 +164,4 @@ function updateCartTotal() {
     // veriificando se o subtotal existe na rota atual, caso verdade, faço a atribuição do total, caso não, uma mensagem aparecerá no console e a função se encerrará
     if (subTotal !== null)
         subTotal.value = 'R$' + total.toFixed(2).replace('.', ',');
-
-
 }

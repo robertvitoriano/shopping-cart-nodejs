@@ -9,7 +9,7 @@ const  expressLayouts = require('express-ejs-layouts');
 let mongoose = require('mongoose');
 const methodOverride = require('method-override')
 
-mongoose.connect('mongodb://localhost/booksShop',{useNewUrlParser: true,useUnifiedTopology: true  })
+mongoose.connect('mongodb+srv://robertvitoriano:GHgrfCwHJzGmwYJf@cluster0.btwq6.mongodb.net/shopping-cart-nodejs?retryWrites=true&w=majority',{useNewUrlParser: true,useUnifiedTopology: true  })
   .then(res => console.log("Server is running on localhost:3000"))
   .catch(err => console.log(err))
 
